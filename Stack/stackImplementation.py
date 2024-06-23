@@ -8,12 +8,12 @@ def push(stack , item):
             stack.append(i)
 
 def pop(stack):
-    if not is_empty(stack): # type: ignore
+    if not is_empty(stack):
         return stack.pop()
     return None 
 
 def peek(stack):
-    if not is_empty(stack):  # type: ignore
+    if not is_empty(stack):  
         return stack[-1]
     
 def is_empty(stack):
@@ -21,6 +21,11 @@ def is_empty(stack):
 
 def size(stack):
     return len(stack)
+
+def display(stack):
+    while(stack.peek() == None):
+        return stack
+
 lst = [2,3,4,5]
 push(stack ,lst)
 push(stack , 5)
